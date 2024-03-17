@@ -15,7 +15,7 @@ def submit():
     uploaded_file = request.files['file']
     # Process and store the data/file as needed
 
-    uploaded_file.save("./{}".format(uploaded_file.filename))
+    #uploaded_file.save("./{}".format(uploaded_file.filename))
     return render_template('submit.html')
 
 
