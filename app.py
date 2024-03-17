@@ -16,7 +16,7 @@ def submit():
     # Process and store the data/file as needed
 
     uploaded_file.save("./{}".format(uploaded_file.filename))
-    return "Data submitted successfully. Thanks for your submission! \n We will get back to you soon."
+    return render_template('submit.html')
 
 
 if __name__ == '__main__':
